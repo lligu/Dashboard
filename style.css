@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Yanone+Kaffeesatz:wght@300;400;600&display=swap');
+
+
+html {
+    background-color: lightpink;
+    height: 100vh;
+}
+body {
+    background-color: lightcoral;
+    display: grid;
+    grid-template-areas:
+    "side nav"
+    "side main";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+}
+
+
+aside {
+    z-index: 1;
+    background-color: #104547;
+    color: white;
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    margin-top: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuDiv {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+aside ul li {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+aside svg {
+    padding-right: 15px;
+}
+
+
+nav {
+    z-index: 1;
+    background-color: #EFD8CA;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+main {
+    background-color: #FFF7EB;
+    box-shadow: inset 2px 2px 5px black;
+    grid-area: main;
+}

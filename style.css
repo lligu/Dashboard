@@ -4,7 +4,7 @@
 
 html {
     background-color: lightpink;
-    height: 100vh;
+    height: 100%;
 }
 body {
     background-color: lightcoral;
@@ -56,16 +56,96 @@ aside svg {
 
 nav {
     z-index: 1;
-    background-color: #EFD8CA;
+    background-color: #FFF7EB;
     grid-area: nav;
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    column-gap: 10px;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
+    padding: 10px 10px 10px 50px;
+}
+nav form {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+nav form svg {
+    padding-right: 20px;
+}
+nav input {
+    padding: 5px 10px 5px 10px;
+    height: 20px;
+    border: 0px;
+    border-radius: 10px;
+    flex-grow: 2;
+    font-size: 1.15rem;
+    background-color: rgb(220, 220, 220);
+    outline: 0px;
+    border: 0px;
+    box-shadow: 0px 0px 2px gray;
+}
+.accountDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.accountDiv img {
+    width: 50px;
+    height: 50px;
+}
+.helloDiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.helloDiv img {
+    width: 75px;
+    height: 75px;
+}
+.helloParas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+.phrase {
+    font-size: 1rem;
+}
+.name {
+    font-size: 1.50rem;
+}
+.buttonDiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.buttonDiv button {
+    background-color: #104547;
+    color: white;
+    border: 0px;
+    height: 40px;
+    width: 100px;
+    font-size: 1.10rem;
+    border-radius: 20px;
+    font-weight: 500;
 }
 
 
 main {
-    background-color: #FFF7EB;
+    background-color: #f7e3d6;
     box-shadow: inset 2px 2px 5px black;
     grid-area: main;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding: 20px;
+}
+.mainAside {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
